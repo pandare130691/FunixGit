@@ -23,7 +23,7 @@ def goccanh_tamgiac(input):
 		gc = m.acos(-1 * (ab ** 2 - ac ** 2 - bc ** 2) / (2 * bc * ac))
 		gb = m.acos(-1 * (ac ** 2 - bc ** 2 - ab ** 2) / (2 * bc * ab))
 		ga = m.acos(-1 * (bc ** 2 - ab ** 2 - ac ** 2) / (2 * ab * ac))
-		kq = [round(ab, 2), round(bc,2), round(ac,2), round(ga * 180 / m.pi, 2), round(gb * 180 / m.pi, 2), round(gc * 180 / m.pi, 2)]
+		kq = [format(ab, '.2f'), format(bc,'.2f'), format(ac,'.2f'), format(ga * 180 / m.pi, '.2f'), format(gb * 180 / m.pi, '.2f'), format(gc * 180 / m.pi, '.2f')]
 		return kq
 
 # c)
@@ -40,11 +40,11 @@ def xet_tamgiac(input):
 		ga = 180 / m.pi * (m.acos(-1 * (bc ** 2 - ab ** 2 - ac ** 2) / (2 * ab * ac)))
 		if ab == bc and bc == ac:
 			return "ABC là tam giac deu"
-		elif ab == ac and ga == 90:
+		elif ab == ac and round(ga,3) == 90:
 			return "ABC la tam giac vuong can tai dinh A"
-		elif ab == bc and gb == 90:
+		elif ab == bc and round(gb,3) == 90:
 			return "ABC la tam giac vuong can tai dinh B"
-		elif ac == bc and gc == 90:
+		elif ac == bc and round(gc,3) == 90:
 			return "ABC la tam giac vuong can tai dinh C"
 		elif ab == ac and ga > 90:
 			return "ABC la tam giac tu va can tai dinh A"
@@ -81,7 +81,7 @@ def dientich_tamgiac(input):
 	# Heron: sqrt (p*(p-a)*(p-b)*(p-c))
 	p = 1 / 2 * (ab + bc + ac)
 	gt = m.sqrt(p * (p - ab) * (p - bc) * (p - ac))
-	return round(gt, 2)
+	return format(gt, '.2f')
 
 # e)
 def duongcao_tamgiac(input):
@@ -89,9 +89,9 @@ def duongcao_tamgiac(input):
 	ac = m.sqrt((input[4] - input[0]) ** 2 + (input[5] - input[1]) ** 2)
 	bc = m.sqrt((input[4] - input[2]) ** 2 + (input[5] - input[3]) ** 2)
 	p = 1 / 2 * (ab + bc + ac)
-	cA = round(2 * m.sqrt(p*(p-ab)*(p-ac)*(p-bc)) / bc, 2)
-	cB = round(2 * m.sqrt(p*(p-ab)*(p-ac)*(p-bc)) / ac, 2)
-	cC = round(2 * m.sqrt(p*(p-ab)*(p-ac)*(p-bc)) / ab, 2)
+	cA = format(2 * m.sqrt(p*(p-ab)*(p-ac)*(p-bc)) / bc, '.2f')
+	cB = format(2 * m.sqrt(p*(p-ab)*(p-ac)*(p-bc)) / ac, '.2f')
+	cC = format(2 * m.sqrt(p*(p-ab)*(p-ac)*(p-bc)) / ab, '.2f')
 	return [cA, cB, cC]
 
 # f)
@@ -103,9 +103,9 @@ def trungtuyen_tamgiac(input):
 	a2 = a/4
 	a3 = m.sqrt(a2)
 	a4 = a3 * 2/3
-	ttA = round(2 / 3 *m.sqrt(((2 * (ab ** 2 + ac ** 2) - bc ** 2)/4)),2)
-	ttB = round(2 / 3 * m.sqrt((2 * (ab ** 2 + bc ** 2) - ac ** 2)/4), 2)
-	ttC = round(2 / 3 * m.sqrt((2 * (ac ** 2 + bc ** 2) - ab ** 2)/4), 2)
+	ttA = format(2 / 3 *m.sqrt(((2 * (ab ** 2 + ac ** 2) - bc ** 2)/4)),'.2f')
+	ttB = format(2 / 3 * m.sqrt((2 * (ab ** 2 + bc ** 2) - ac ** 2)/4), '.2f')
+	ttC = format(2 / 3 * m.sqrt((2 * (ac ** 2 + bc ** 2) - ab ** 2)/4), '.2f')
 	return  [ttA, ttB, ttC]
 
 # g)
@@ -169,10 +169,10 @@ def giaima_tamgiac(input):
 		print("Khoang cach den trong tam tu dinh C:", ttt[2] )
 		ttg = tam_tamgiac(input)
 		print("4. Toa do mot so diem dac biet cua tam giac ABC:" )
-		print("Toa do trong tam:", ttg[0], ttg[1] )
-		print("Toa do truc tam:", ttg[2], ttg[3] )
+		print("Toa do trong tam:", str(ttg[0])+", "+ str(ttg[1] ))
+		print("Toa do truc tam:", str(ttg[2])+", "+ str(ttg[3]) )
 
 	else:
 		print('A, B, C khong hop thanh mot tam giac')
 
-giaima_tamgiac([0,0, 0, 4, 3,0])
+giaima_tamgiac([1, 1, 2, 2, 3, 1])

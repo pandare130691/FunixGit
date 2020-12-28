@@ -24,22 +24,28 @@
     <Compile Include="Asignments\Ass1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Lab1\Lab1.py" />
-    <Compile Include="Lab5\Lab5_4.py" />
-    <Compile Include="Lab5\Lab5_3.py" />
-    <Compile Include="Lab5\Lab5_2.py" />
-    <Compile Include="Lab5\Lab5_1.py">
+    <Compile Include="Codelearn\CauLenhLuaChon.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Lab5\Lab5_6.py" />
-    <Compile Include="Lab5\Lab5_5.py">
+    <Compile Include="Codelearn\Chuongtrinhdautienvachuthich.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Codelearn\HamPython.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Codelearn\KieuDL_Bien_EpKieu.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Codelearn\Loop.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Codelearn\ToanTu.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Lab1\" />
-    <Folder Include="Lab5\" />
     <Folder Include="Asignments\" />
+    <Folder Include="Codelearn\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
