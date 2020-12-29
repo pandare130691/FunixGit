@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b2cde436-2252-4da4-be54-fd4d51093d8c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Asignments\Ass1.py</StartupFile>
+    <StartupFile>Codelearn\Practise1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,6 +27,9 @@
     <Compile Include="Codelearn\CauLenhLuaChon.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Codelearn\Chuoi.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Codelearn\Chuongtrinhdautienvachuthich.py">
       <SubType>Code</SubType>
     </Compile>
@@ -39,13 +42,23 @@
     <Compile Include="Codelearn\Loop.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Codelearn\MangVaLietKe.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Codelearn\Practise1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Codelearn\ToanTu.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labs\DicSet.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Asignments\" />
     <Folder Include="Codelearn\" />
+    <Folder Include="Labs\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
