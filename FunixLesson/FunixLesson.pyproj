@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b2cde436-2252-4da4-be54-fd4d51093d8c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Codelearn\Practise1.py</StartupFile>
+    <StartupFile>Asignments\As2\danhgia_diemtongket.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Asignments\As2\danhgia_diemtongket.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Asignments\As2\tinhtoan_diemtongket.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Asignments\Ass1.py">
       <SubType>Code</SubType>
     </Compile>
@@ -57,8 +63,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Asignments\" />
+    <Folder Include="Asignments\As2\" />
     <Folder Include="Codelearn\" />
     <Folder Include="Labs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="diem_chitiet.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -30,6 +30,3 @@
 #    print("Isosceles triangle")
 #else:
 #    print("Scalene triangle")
-
-t= ('a', 'b', 'c', 'd')
-print(t[1:-1])
