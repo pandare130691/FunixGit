@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b2cde436-2252-4da4-be54-fd4d51093d8c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Asignments\As2\danhgia_diemtongket.py</StartupFile>
+    <StartupFile>Labs\OPP\Third.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -60,12 +60,22 @@
     <Compile Include="Labs\DicSet.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Labs\OPP\First.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labs\OPP\Second.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labs\OPP\Third.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Asignments\" />
     <Folder Include="Asignments\As2\" />
     <Folder Include="Codelearn\" />
     <Folder Include="Labs\" />
+    <Folder Include="Labs\OPP\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="diem_chitiet.txt" />
