@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b2cde436-2252-4da4-be54-fd4d51093d8c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Labs\OPP\Third.py</StartupFile>
+    <StartupFile>Asignments\Ass2\tinhtoan_diemtongket.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,13 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Asignments\As2\danhgia_diemtongket.py">
+    <Compile Include="Asignments\Ass2\danhgia_diemtongket.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Asignments\As2\tinhtoan_diemtongket.py">
+    <Compile Include="Asignments\Ass2\tinhtoan_diemtongket.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Asignments\Ass1.py">
+    <Compile Include="Asignments\Ass1\Ass1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Asignments\Ass3\tinhtoanbangdiem_python.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Codelearn\CauLenhLuaChon.py">
@@ -72,7 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Asignments\" />
-    <Folder Include="Asignments\As2\" />
+    <Folder Include="Asignments\Ass2\" />
+    <Folder Include="Asignments\Ass3\" />
+    <Folder Include="Asignments\Ass1\" />
     <Folder Include="Codelearn\" />
     <Folder Include="Labs\" />
     <Folder Include="Labs\OPP\" />
