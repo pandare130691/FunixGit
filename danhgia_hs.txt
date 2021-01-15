@@ -1,0 +1,4 @@
+Ma HS, xeploai_TB chuan, xeploai_A, xeploai_A1, xeploai_B, xeploai_C, xeploai_D
+Phan Xuân Dũng; Gioi; 1; 1; 1; 1; 1
+Trần Thị Thanh Nhàn; Gioi; 1; 1; 1; 1; 1
+Nguyen Thi Thanh Huong; TB; 3; 2; 3; 1; 2

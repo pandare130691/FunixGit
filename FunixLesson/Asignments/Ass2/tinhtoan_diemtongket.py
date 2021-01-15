@@ -41,8 +41,13 @@ def tinhdiem_trungbinh(path):
 				logging.error("line " + str( i + 1) + " data khong dung cau truc")
 
 	if(len(output)>0):
-		print_output(output)
-		return output
+		rt = {}
+		for k,v in output.items():
+			citem = {}
+			for k2,v2 in v.items():
+				citem[k2] = format(v2, '.2f')
+			rt[k] = citem
+		return rt
 	else:
 		print("input data trống hoặc nhập không đúng định dạng chuẩn")
 		return None
@@ -56,30 +61,24 @@ def print_output(output):
 			uv[k] = format(v, '.2f')
 	print(out)
 
-def luudiem_trungbinh(pathin, pathout, rdin):
-	rd = copy.deepcopy(rdin)
+def luudiem_trungbinh(pathout, diemtb):
+	rd = copy.deepcopy(diemtb)
 	wf = open(pathout, mode='w', encoding="utf8")
-	rf = open(pathin, encoding='utf8')
-	rls = rf.readlines()
-	title = rls[0].rstrip() + '\n'
+	title = 'Mã HS, Toán , Lý, Hóa, Sinh, Văn, Anh, Sử, Địa\n'
 	for uk, uv in rd.items():
 		title += uk + ';'
-		ic = len(uv)
 		for k,v in uv.items():
-				title += format(v, '.2f') + ';'
+				title += v+';'
 		title = title[0:-1] + '\n'
 	wf.write(title)
-	rf.close()
 	wf.close()
 
 def main():
-	#path = 'diem_chitiet.txt'
-	#path = 'diem_trungbinh.txt'
-	path = input("Đường dẫn cho input file: ")
-	path_out = input("Đường dẫn cho output file: ")
-	tinhdiemtb = tinhdiem_trungbinh(path)
-	if(tinhdiemtb!=None):
-		luudiem_trungbinh(path, path_out, tinhdiemtb)
+	path = input("Đường dẫn cho diem_chitiet input file: ")
+	path_out = input("Đường dẫn cho diem_trungbinh output file: ")
+	diem_tb = tinhdiem_trungbinh(path)
+	if(diem_tb!=None):
+		luudiem_trungbinh(path_out, diem_tb)
 		print("Lưu thành công")
 	
 main()

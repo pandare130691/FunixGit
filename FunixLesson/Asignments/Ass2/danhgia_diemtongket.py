@@ -1,5 +1,4 @@
-def xeploai_hocsinh():
-	path = "trungbinh.txt"
+def xeploai_hocsinh(path):
 	rf = open(path, encoding='utf8')
 	output = {}
 	lines = rf.readlines()
@@ -115,9 +114,27 @@ def classifi_uni(inp):
 
 	return [a,a1,b,c,d]
 
+def luudanhgia( path_danhgia, xeploai, xeploai_thidaihoc):
+	wf = open(path_danhgia, mode='w', encoding="utf8")
+	title = 'Ma HS, xeploai_TB chuan, xeploai_A, xeploai_A1, xeploai_B, xeploai_C, xeploai_D\n'
+	for k1,v1 in xeploai_thidaihoc.items():
+		hocluc = ""
+		for k2, v2 in xeploai.items():
+			if k1==k2:
+				hocluc = v2
+				break
+		title += k1 + "; " + hocluc + "; "
+		for v in v1:
+			title += str(v) + "; "
+		title = title[0:-2] + "\n"
+	wf.write(title)
+	wf.close()
+
 def main():
-	pathin = input()
-	pathout = input()
-	xeploai_thidaihoc_hocsinh(pathin)
+	path_dtb = input("File luu diem trung binh input: ")
+	path_danhgia = input("File luu bang danh gia output: ")
+	xeploai = xeploai_hocsinh(path_dtb)
+	xeploai_thidaihoc = xeploai_thidaihoc_hocsinh(path_dtb)
+	luudanhgia (path_danhgia, xeploai, xeploai_thidaihoc)
 
 main()

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b2cde436-2252-4da4-be54-fd4d51093d8c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Asignments\Ass2\tinhtoan_diemtongket.py</StartupFile>
+    <StartupFile>Asignments\Ass3\tinhtoanbangdiem_python.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

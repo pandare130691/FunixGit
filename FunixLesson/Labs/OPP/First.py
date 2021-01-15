@@ -2,13 +2,18 @@
 class Student:
 	name = ''
 	dtb = 0
-	def __init__(self, name, dtb):
+	def __init__(self, name, toan, ly, hoa):
 		self.name = name
-		self.dtb = dtb
+		self.toan = toan
+		self.ly = ly
+		self.hoa = hoa
 	def print_dtb(self):
-		print("The average mark of ", self.name, "is",  format(self.dtb, '.2f'))
+		dtb = (self.toan + self.ly + self.hoa)/3
+		print("The average mark of ", self.name, "is",  format(dtb, '.2f'))
 
-student = "Phan Xuan Dung"
-dtb = 9.5
-my_obj = Student(student, dtb)
-my_obj.print_dtb()
+name = input('Ten cua ban: ')
+toan = int(input('Toan: '))
+ly = int(input('Ly: '))
+hoa = int(input('Hoa: '))
+my_o = Student(name, toan, ly, hoa)
+my_o.print_dtb()
